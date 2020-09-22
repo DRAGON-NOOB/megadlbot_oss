@@ -14,7 +14,7 @@ from mega.helpers.media_info import MediaInfo
 
 
   
-@pyrogram.Client.on_message(pyrogram.filters.document)
+@Client.on_message(pyrogram.filters.document)
 async def document(bot,update):
   await bot.send_message(
          chat_id=update.chat.id,
