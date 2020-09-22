@@ -1,7 +1,7 @@
 #code by eyyadh#
 import os
 import re
-
+import pyrogram
 from pyrogram import emoji, Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, ForceReply
 from pyrogram import filters
@@ -14,7 +14,7 @@ from mega.helpers.media_info import MediaInfo
 
 
   
-@Client.on_message(pyrogram.filters.document)
+@pyrogram.Client.on_message(pyrogram.filters.document)
 async def document(bot,update):
   await bot.send_message(
          chat_id=update.chat.id,
