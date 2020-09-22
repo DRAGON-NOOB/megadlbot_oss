@@ -25,6 +25,25 @@ from mega.helpers.media_info import MediaInfo
 from mega.helpers.screens import Screens
 from mega.helpers.ytdl import YTdl
 
+  
+@pyrogram.Client.on_message(pyrogram.filters.document)
+async def document(bot,update):
+  await bot.send_message(
+         chat_id=update.chat.id,
+         text = "hi",
+         reply_markup=InlineKeyboardMarkup(
+     [
+                [         InlineKeyboardButton(text=f"{emoji.PENCIL} Rename",
+                                         callback_data=f"rename")
+                ]
+            ]
+      ),
+         
+        
+       
+  reply_to_message_id=update.message_id
+
+)
 
           
 
