@@ -1,7 +1,7 @@
 #code by eyyadh#
 import os
 import re
-import tldextract
+
 from pyrogram import emoji, Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, ForceReply
 from .. import filters
