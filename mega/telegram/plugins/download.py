@@ -11,18 +11,7 @@ from mega.helpers.downloader import Downloader
 from mega.helpers.media_info import MediaInfo
 
 
-import os
-import re
-import tldextract
-from pyrogram import emoji, Client
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, ForceReply
-from .. import filters
-from mega.database.files import MegaFiles
-from mega.database.users import MegaUsers
-from mega.helpers.downloader import Downloader
-from mega.helpers.media_info import MediaInfo
-from mega.helpers.screens import Screens
-from mega.helpers.ytdl import YTdl
+
 
   
 @pyrogram.Client.on_message(pyrogram.filters.document)
