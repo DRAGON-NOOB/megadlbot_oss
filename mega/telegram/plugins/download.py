@@ -4,7 +4,7 @@ import re
 
 from pyrogram import emoji, Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, ForceReply
-from .. import filters
+from pyrogram import filters
 from mega.database.files import MegaFiles
 from mega.database.users import MegaUsers
 from mega.helpers.downloader import Downloader
