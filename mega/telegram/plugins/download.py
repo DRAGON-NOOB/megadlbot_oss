@@ -37,7 +37,7 @@ async def document(bot,update):
 
 
 
-@Client.on_callback_query(filters.callback_query("rename"), group=1)
+@Client.on_callback_query(filters.CallbackQuery("rename"), group=1)
 async def callback_rename_handler(c: Client, cb: CallbackQuery):
     await cb.answer()
 
